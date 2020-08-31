@@ -1,4 +1,7 @@
-axios.defaults.baseURL="http://localhost:8888";
+axios.defaults.baseURL="http://127.0.0.1:8888";
+
+axios.defaults.withCredentials=true;
+
 axios.defaults.headers['Content-Type']='application/x-www-form-urlencoded';//使数据以表单形式提交
 
 axios.defaults.transformRequest=function(data){

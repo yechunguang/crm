@@ -11,7 +11,8 @@ $(function(){
         password = md5(password)
          
          let res=await axios.post("/user/login",{ account,password})
-         if(parseInt(res.code)===0){
+         console.log(res);
+         if(parseInt(res.code)==0){
              alert("登录成功")
              window.location.href="index.html"
              return
